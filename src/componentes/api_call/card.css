@@ -1,0 +1,117 @@
+#card{
+    width: 300px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 25px;
+  }
+  
+  #photo{
+    min-width: 250px;
+    min-height: 300px;
+    max-width: 250px;
+    max-height: 300px;
+    object-fit:cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+  }
+
+  #photo:hover{
+    transform: scale(1.2);
+  }
+  
+  h4{
+    margin-top: 3vh;
+    text-align: center;
+    color: var(--quinary-color);
+  }
+  
+  @media (max-width: 830px){
+    #card{
+      width: 230px;
+      height: 300px;
+      margin: 30px 20px;
+    }
+
+    #photo{
+      min-width: 180px;
+      min-height: 230px;
+      max-width: 180px;
+      max-height: 230px;
+    }
+
+    #photo:hover{
+      transform: none;
+    }
+
+    h4{
+      font-size: medium;
+    }
+  }
+  
+  @media (max-width: 650px){
+    #card{
+      width: 200px;
+      height: 270px;
+      margin: 30px 20px;
+    }
+    #photo{
+      min-width: 160px;
+      min-height: 200px;
+      max-width: 160px;
+      max-height: 200px;
+    }
+    h4{
+      font-size: small;
+    }
+  }
+  
+  @media (max-width: 570px){
+    #card{
+      width: 160px;
+      height: 230px;
+      margin: 30px 20px;
+    }
+    #photo{
+      min-width: 120px;
+      min-height: 160px;
+      max-width: 120px;
+      max-height: 160px;
+    }
+  }
+  
+  @media (max-width: 480px){
+    #card{
+      width: 140px;
+      height: 210px;
+      margin: 25px 15px;
+    }
+    #photo{
+      min-width: 100px;
+      min-height: 140px;
+      max-width: 100px;
+      max-height: 140px;
+      border-radius: 10px;
+    }
+    h4{
+      font-size:x-small;
+    }
+  }
+  
+  @media (max-width: 400px){
+    #card{
+      width: 110px;
+      height: 180px;
+      margin: 20px 10px;
+    }
+    #photo{
+      min-width: 80px;
+      min-height: 120px;
+      max-width: 80px;
+      max-height: 120px;
+      
+    }
+  }

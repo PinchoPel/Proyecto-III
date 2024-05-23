@@ -1,0 +1,20 @@
+input{
+ width: 40vw;
+ height: 4vh;
+ border-radius: 20px;
+ padding: 0.5vw 1vw;
+ border-color: var(--quinary-color);
+ border-width: 4px;
+}
+
+@media (max-width: 370px){
+    input{
+        font-size:x-small;
+    }
+}
+
+@media (max-width: 290px){
+    input{
+        font-size:xx-small;
+    }
+}

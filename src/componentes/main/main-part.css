@@ -1,0 +1,15 @@
+main{
+    width: 85vw;
+    height: fit-content;
+    border-top: var(--quaternary-color) 6px solid;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5vw;
+}
+
+img{
+    flex-basis: 150px;
+}

@@ -1,0 +1,48 @@
+#buttonInput{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: var(--quinary-color);
+    border-width: 4px;
+    cursor: pointer;
+}
+
+.lupa{
+  max-width: 24px;
+  max-height: 24px;
+  cursor: pointer;
+}
+
+.lupa:hover{
+    transform: none;
+}
+
+@media (max-width: 700px){
+  #buttonInput{
+        width: 45px;
+        height: 35px;
+        border-radius: 10px;
+        border-color: var(--quinary-color);
+        border-width: 4px;
+    }
+    
+    .lupa{
+      max-width: 20px;
+      max-height: 20px;
+    }
+}
+
+@media (max-width: 400px){
+  #buttonInput{
+        width: 38px;
+        height: 35px;
+        border-radius: 10px;
+        border-color: var(--quinary-color);
+        border-width: 4px;
+    }
+    
+    .lupa{
+      max-width: 16px;
+      max-height: 16px;
+    }
+}
