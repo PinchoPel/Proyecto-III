@@ -1,0 +1,18 @@
+#buttonCleaner{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: var(--quinary-color);
+    border-width: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+  #buttonCleaner{
+        width: 60px;
+        height: 35px;
+        border-radius: 10px;
+        border-color: var(--quinary-color);
+        border-width: 4px;
+    }
+}

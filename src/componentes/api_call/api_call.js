@@ -8,7 +8,6 @@ export let renderPhotos = () =>{
        method: "GET"
    }).then(res => res.json())
    .then(photo =>{
-       console.log(photo);
                let card = document.createElement("div");
               let image = document.createElement("img");
               let title = document.createElement("h4");

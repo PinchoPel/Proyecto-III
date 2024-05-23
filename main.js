@@ -3,6 +3,9 @@ import './style.css'
 import { header } from './src/componentes/header/header'
 document.body.append(header);
 
+import { buttonCleaner} from './src/componentes/cleaner/cleaner';
+header.append(buttonCleaner);
+
 import { input } from './src/componentes/input/input'
 header.append(input);
 
