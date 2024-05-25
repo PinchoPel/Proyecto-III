@@ -18,7 +18,7 @@ buttonInput.append(imageButton);
 let filteredPhotos = () =>{
     main.innerHTML = "";
     let inputValue = input.value.toLocaleLowerCase();
-        fetch("https://api.unsplash.com/search/photos?per_page=5&query=" + inputValue + "&client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{
+        fetch("https://api.unsplash.com/search/photos?per_page=7&query=" + inputValue + "&client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{
             method: "GET"
         }).then(res => res.json())
         .then(photos =>{

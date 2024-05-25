@@ -3,7 +3,7 @@ import "./card.css"
 
 export let renderPhotos = () =>{
    main.innerHTML="";
-   for (let index = 1; index <= 1; index++) {
+   for (let index = 1; index <= 7; index++) {
    fetch("https://api.unsplash.com/photos/random/?client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{
        method: "GET"
    }).then(res => res.json())
