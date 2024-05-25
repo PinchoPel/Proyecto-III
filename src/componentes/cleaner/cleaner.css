@@ -1,5 +1,5 @@
 #buttonCleaner{
-    width: 80px;
+    width: 50px;
     height: 40px;
     border-radius: 10px;
     border-color: var(--quinary-color);
@@ -7,12 +7,42 @@
     cursor: pointer;
 }
 
+#broom{
+  max-width: 24px;
+  max-height: 24px;
+  cursor: pointer;
+}
+
+#broom:hover{
+    transform: none;
+}
+
 @media (max-width: 700px){
   #buttonCleaner{
-        width: 60px;
+        width: 45px;
         height: 35px;
         border-radius: 10px;
         border-color: var(--quinary-color);
         border-width: 4px;
+    }
+    
+    #broom{
+      max-width: 20px;
+      max-height: 20px;
+    }
+}
+
+@media (max-width: 400px){
+  #buttonCleaner{
+        width: 38px;
+        height: 35px;
+        border-radius: 10px;
+        border-color: var(--quinary-color);
+        border-width: 4px;
+    }
+    
+    #broom{
+      max-width: 16px;
+      max-height: 16px;
     }
 }

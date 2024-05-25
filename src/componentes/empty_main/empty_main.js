@@ -41,4 +41,3 @@ export let searchPhotosEnter_Empty = input.addEventListener("keypress",function(
         suggestionSearch();
     }
 });
-
