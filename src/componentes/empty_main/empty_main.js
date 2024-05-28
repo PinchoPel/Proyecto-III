@@ -1,10 +1,10 @@
 import "./section.css"
 
-import { main } from "../main/main-part"
+import { main } from "../main/main-part";
 
 import { input } from "../input/input";
-import { buttonInput } from "../button/button";
 
+import { buttonInput } from "../search/button";
 
 let suggestionSearch = () => {
     setTimeout(() => {
@@ -12,15 +12,14 @@ let suggestionSearch = () => {
     main.innerHTML = "";
     const empty_section = document.createElement("section");
     empty_section.id = "empty_section";
-    for (let index = 1; index <= 3; index++) {
-    fetch("https://api.unsplash.com/photos/random/?client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{
+    fetch("https://api.unsplash.com/photos/random?count=3&topic&client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{
         method: "GET"
     }).then(res => res.json())
     .then(photos =>{
+        console.log(photos);
+        photos.forEach(element => {
         let empty_button = document.createElement("button");
-        let suggestions = photos.tags_preview;
-            let randomNumber = Math.floor(Math.random() * suggestions.length);
-        empty_button.textContent =  suggestions[randomNumber].title;
+        empty_button.textContent =  element.alt_description;
         empty_button.id = "empty_button";
             empty_section.append(empty_button);
             main.append(empty_section);
@@ -30,7 +29,7 @@ let suggestionSearch = () => {
                 input.focus();
                 })
             })
-    })}
+    })   });
 }    }, 1300);
 }
 

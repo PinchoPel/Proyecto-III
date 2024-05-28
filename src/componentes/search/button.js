@@ -1,6 +1,6 @@
 import "./button.css"
 
-import { main } from "../main/main-part"
+import { main } from "../main/main-part";
 
 import { input } from "../input/input";
 
@@ -27,7 +27,7 @@ let filteredPhotos = () =>{
                    let image = document.createElement("img");
                    let title = document.createElement("h4");
                    card.id = "card";
-                  image.src = element.urls.full;
+                  image.src = element.urls.regular;
                   image.alt = element.alt_description;
                   image.id = "photo";
                   title.textContent = element.alt_description;

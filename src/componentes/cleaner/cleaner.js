@@ -1,6 +1,7 @@
 import "./cleaner.css"
 
-import { main } from "../main/main-part";
+import { renderPhotos } from "../api_call/api_call";
+
 import { input } from "../input/input";
 
 export let buttonCleaner = document.createElement("button");
@@ -11,7 +12,8 @@ imageButtonCleaner.id = "broom";
 buttonCleaner.append(imageButtonCleaner);
 
 
+
 buttonCleaner.addEventListener("click", function(){
-    main.innerHTML = "";
+    renderPhotos();
     input.value = "";
 })
