@@ -30,7 +30,7 @@ export let suggestionSearch = () => {
                 })
             })
     })   });
-}    }, 700);
+}    }, 1300);
 }
 
 export let  searchPhotosButton_Empty = buttonInput.addEventListener("click",suggestionSearch)
