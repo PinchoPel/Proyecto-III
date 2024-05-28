@@ -1,4 +1,4 @@
-import { main } from "../main/main-part";
+import { main } from "./main-part";
 import "./card.css"
 
 export let renderPhotos = () =>{

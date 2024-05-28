@@ -1,8 +1,8 @@
-import "./button.css"
+import "./buttonInput.css"
 
 import { main } from "../main/main-part";
 
-import { input } from "../input/input";
+import { input } from "./input";
 
 
 

@@ -1,12 +1,12 @@
 import "./section.css"
 
-import { main } from "../main/main-part";
+import { main } from "./main-part";
 
-import { input } from "../input/input";
+import { input } from "../header/input";
 
-import { buttonInput } from "../search/button";
+import { buttonInput } from "../header/buttonInput";
 
-let suggestionSearch = () => {
+export let suggestionSearch = () => {
     setTimeout(() => {
     if (main.childNodes.length === 0) {
     main.innerHTML = "";
@@ -30,7 +30,7 @@ let suggestionSearch = () => {
                 })
             })
     })   });
-}    }, 1300);
+}    }, 700);
 }
 
 export let  searchPhotosButton_Empty = buttonInput.addEventListener("click",suggestionSearch)

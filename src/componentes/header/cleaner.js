@@ -1,8 +1,8 @@
 import "./cleaner.css"
 
-import { renderPhotos } from "../api_call/api_call";
+import { renderPhotos } from "../main/api_call";
 
-import { input } from "../input/input";
+import { input } from "./input";
 
 export let buttonCleaner = document.createElement("button");
 const imageButtonCleaner = document.createElement("img");
