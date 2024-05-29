@@ -3,12 +3,12 @@ import "./header.css"
 
 export const header =  document.createElement("header");
 
-import { buttonCleaner } from "./cleaner";
+import { buttonCleaner } from "./cleanerFilter/cleaner";
 header.append(buttonCleaner);
 
-import { input } from "./input";
+import { input } from "./Input/input";
 header.append(input);
 
-import { buttonInput } from "./buttonInput";
+import { buttonInput } from "./buttonInputSearch/buttonInput";
 header.append(buttonInput)
 

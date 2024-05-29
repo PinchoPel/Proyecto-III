@@ -1,8 +1,8 @@
 import "./buttonInput.css"
 
-import { main } from "../main/main-part";
+import { main } from "../../main/main-part";
 
-import { input } from "./input";
+import { input } from "../Input/input";
 
 
 
@@ -15,7 +15,7 @@ imageButton.className = "lupa";
 buttonInput.id = "buttonInput";
 buttonInput.append(imageButton);
 
-let filteredPhotos = () =>{
+export let filteredPhotos = () =>{
     main.innerHTML = "";
     let inputValue = input.value.toLocaleLowerCase();
         fetch("https://api.unsplash.com/search/photos?per_page=7&query=" + inputValue + "&client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{

@@ -1,10 +1,12 @@
 import "./section.css"
 
-import { main } from "./main-part";
+import { main } from "../main-part";
 
-import { input } from "../header/input";
+import { input } from "../../header/Input/input";
 
-import { buttonInput } from "../header/buttonInput";
+import { buttonInput } from "../../header/buttonInputSearch/buttonInput";
+
+import { filteredPhotos } from "../../header/buttonInputSearch/buttonInput";
 
 export let suggestionSearch = () => {
     setTimeout(() => {
@@ -16,7 +18,6 @@ export let suggestionSearch = () => {
         method: "GET"
     }).then(res => res.json())
     .then(photos =>{
-        console.log(photos);
         photos.forEach(element => {
         let empty_button = document.createElement("button");
         empty_button.textContent =  element.alt_description;
@@ -28,6 +29,7 @@ export let suggestionSearch = () => {
             empty_button.addEventListener("click",function(){
                 input.focus();
                 })
+            empty_button.addEventListener("click",filteredPhotos())
             })
     })   });
 }    }, 1300);
