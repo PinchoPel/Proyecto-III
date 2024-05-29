@@ -5,7 +5,7 @@ import "./card.css"
 export let renderPhotos = () =>{
    main.innerHTML="";
    
-   fetch("https://api.unsplash.com/photos/random?count=1&client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{
+   fetch("https://api.unsplash.com/photos/random?count=7&client_id=_ZC3EpBkncFLqeDKz12rWWm0EbcJZ_ouC3H2aekMHFE",{
        method: "GET"
    }).then(res => res.json())
    .then(photo =>{
